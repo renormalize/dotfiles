@@ -1,0 +1,71 @@
+# theme = "onelight"
+# theme = "noctis"
+# theme = "onedark"
+theme = "molokai"
+# theme = "base16_transparent"
+# theme = "sonokai_transparent"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-completion = true
+auto-format = true
+color-modes = true
+cursorline = true
+true-color = true
+rulers = [120]
+bufferline = "multiple"
+# insert-final-newline = false
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-signature-help-docs = false
+display-inlay-hints = true
+
+[editor.statusline]
+left = [
+  "mode",
+  "spacer",
+  "version-control",
+  "spacer",
+  "separator"
+]
+center = [
+  "spinner",
+  "spacer",
+  "file-name",
+  "file-modification-indicator"
+]
+right = [
+  # "spinner",
+  # "spacer",
+  "workspace-diagnostics",
+  "separator",
+  "spacer",
+  "diagnostics",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
+separator = "╎" 
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.file-picker]
+git-ignore = false
+ignore = true
+hidden = false
